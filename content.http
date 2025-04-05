@@ -1,0 +1,35 @@
+GET http://localhost:8080/api/content
+
+###
+POST http://localhost:8080/api/content
+Content-Type: application/json
+
+{
+    "id": 2,
+    "title": "My Second written in Java",
+    "desc": "This is the edited blog post",
+    "status": "IDEA",
+    "contentType": "ARTICLE",
+    "dateCreated": "2025-04-05T21:39:29.703244",
+    "dateUpdated": null,
+    "url": ""
+}
+
+
+###
+PUT http://localhost:8080/api/content/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "title": "My First Second program written in Java",
+  "desc": "This is the first blog post, that has been edited",
+  "status": "IDEA",
+  "contentType": "ARTICLE",
+  "dateCreated": "2025-04-05T21:39:29.703244",
+  "dateUpdated": "2025-04-05T21:59:29.703244",
+  "url": "http://localhost:8080/api/content/1"
+}
+
+###
+DELETE http://localhost:8080/api/content/1
